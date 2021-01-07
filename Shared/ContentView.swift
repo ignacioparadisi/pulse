@@ -8,9 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var metronome = Metronome()
     var body: some View {
-        Text("Hello, world!")
+        VStack {
+            HStack {
+                Spacer()
+                Text("\(Int(metronome.bpm))")
+                    .font(.system(size: 50))
+                    .bold()
+                    .padding()
+                Text("BPM")
+                    .bold()
+                Spacer()
+            }
+            Stepper("") {
+                metronome.increase()
+            } onDecrement: {
+                metronome.decrease()
+            }
+            .labelsHidden()
+
+            
+            Button(action: {
+                metronome.enabled.toggle()
+            }, label: {
+                Image(systemName: metronome.enabled ? "stop.fill" : "play.fill")
+                    .font(.system(size: 50))
+            })
             .padding()
+        }
     }
 }
 

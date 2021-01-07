@@ -15,6 +15,10 @@
 		320E07AC258A8F5D001CB911 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320E0781258A8F5C001CB911 /* ContentView.swift */; };
 		320E07AD258A8F5D001CB911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320E0782258A8F5D001CB911 /* Assets.xcassets */; };
 		320E07AE258A8F5D001CB911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320E0782258A8F5D001CB911 /* Assets.xcassets */; };
+		320E07C2258A8F82001CB911 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320E07C1258A8F82001CB911 /* Metronome.swift */; };
+		320E07C3258A8F82001CB911 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320E07C1258A8F82001CB911 /* Metronome.swift */; };
+		320E07CA258A91B0001CB911 /* metronome.wav in Resources */ = {isa = PBXBuildFile; fileRef = 320E07C9258A91B0001CB911 /* metronome.wav */; };
+		320E07CB258A91B0001CB911 /* metronome.wav in Resources */ = {isa = PBXBuildFile; fileRef = 320E07C9258A91B0001CB911 /* metronome.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		320E07A2258A8F5D001CB911 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		320E07A6258A8F5D001CB911 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		320E07A8258A8F5D001CB911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320E07C1258A8F82001CB911 /* Metronome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
+		320E07C9258A91B0001CB911 /* metronome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronome.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,10 @@
 		320E077F258A8F5C001CB911 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				320E07C8258A91B0001CB911 /* Resources */,
 				320E0780258A8F5C001CB911 /* PulseApp.swift */,
 				320E0781258A8F5C001CB911 /* ContentView.swift */,
+				320E07C1258A8F82001CB911 /* Metronome.swift */,
 				320E0782258A8F5D001CB911 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -149,6 +157,14 @@
 				320E07A8258A8F5D001CB911 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		320E07C8258A91B0001CB911 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				320E07C9258A91B0001CB911 /* metronome.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				320E07AD258A8F5D001CB911 /* Assets.xcassets in Resources */,
+				320E07CA258A91B0001CB911 /* metronome.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				320E07AE258A8F5D001CB911 /* Assets.xcassets in Resources */,
+				320E07CB258A91B0001CB911 /* metronome.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320E07C2258A8F82001CB911 /* Metronome.swift in Sources */,
 				320E07AB258A8F5D001CB911 /* ContentView.swift in Sources */,
 				320E07A9258A8F5D001CB911 /* PulseApp.swift in Sources */,
 			);
@@ -317,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320E07C3258A8F82001CB911 /* Metronome.swift in Sources */,
 				320E07AC258A8F5D001CB911 /* ContentView.swift in Sources */,
 				320E07AA258A8F5D001CB911 /* PulseApp.swift in Sources */,
 			);
